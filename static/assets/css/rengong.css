@@ -1,0 +1,126 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2019-3-12, 13:34:48
+    Author     : Administrator
+*/
+.m{
+    width: 100%;
+    height: 650px;
+    background-color: #166CAA;
+}
+.left{
+    width: 65%;
+    height: 100%;
+    float: left;
+}
+.right{
+    width: 35%;
+    height: 100%;
+    float: left;
+}
+.boxl1{
+    float: left;
+    margin-top: 28px;
+    margin-left: 6%;
+    width: 88%;
+    height: 90%;
+    background-color: white;
+    border-radius: 5px;
+}
+.boxr1{
+    float: left;
+    margin-top: 28px;
+    width: 92%;
+    height: 90%;
+    background-color: white;
+    border-radius: 5px;
+}
+.top{
+    width: 100%;
+    height: 40px;
+}
+.top img{
+    height: 35px;
+    width: auto;
+    float: left;
+    margin-left: 2%;
+    margin-top: 5px;
+}
+.top h6{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+.lbottom{
+    margin-left: 5%;
+    margin-top: 5px;
+    width: 92%;
+    height: 533px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.rbottom{
+    margin-left: 10%;
+    width: 90%;
+    height: 538px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+#kehutiwen li{
+    list-style-type: none;
+    width: 96%;
+    min-height: 30px;
+}
+.dian{
+    position: relative;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2px;
+    width: 16px;
+    height: 16px;
+    padding-bottom: 4px;  
+    background-color: #166CAA;
+    border-radius: 16px;
+}
+.tiwen{
+    font-size: 15px;
+    color: #8d8888;
+}
+.tiwen:hover{
+    color: black;
+    cursor:pointer;
+}
+.chat{
+    margin-top: 3px;
+    width: 98%;
+    height: 260px;
+    border-radius: 8px;
+    border: 0.5px solid #8d8888;
+}
+.ques{
+    width: 100%;
+    height: 129.5px;
+    border-bottom: 0.5px solid #8d8888;
+}
+.reply{
+    width: 100%;
+    height: 130px;   
+}
+.text{
+    width: 96%;
+    margin-left: 2%;
+    border: none;
+    height: 100px;
+}
+#send{
+    float: right;
+    height: 23px;
+    width: auto;
+    margin-right: 10px;
+}

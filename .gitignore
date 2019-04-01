@@ -1,0 +1,4 @@
+db.sqlite3
+nginx.conf
+uwsgi.ini
+.idea/

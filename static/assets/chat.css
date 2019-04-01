@@ -1,0 +1,371 @@
+/*电脑CSS样式*/
+ * {
+    margin: 0;
+    padding: 0;
+    font-size: 0.95rem;
+ }
+
+.all {                 /*总布局*/
+    width: 100%;
+    height: 700px;
+    background: url("img/back3.jpg")no-repeat;   
+    background-size: cover;
+}
+   
+.chat_index {              /*对话框*/
+    width: 74%;
+    height:500px;
+    position: relative;
+    top: 60px;
+    margin: 0 auto;
+    border:none;
+    
+}
+
+.chat_banner {                 /*导航框*/
+    background:#666666; /* 标准的语法 */
+    width: 92%;
+    height: 55px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    font-weight: bold;  
+    color: white;
+    padding-top: 15px;
+    padding-left: 8%;
+    background: url("img/top.png")no-repeat;   
+    background-size: cover;
+}
+
+.chat_left {                  /*左*/
+    width: 63%;
+    height: 445px;
+    float: left;
+    border: 0.5px solid #999999;
+    border-right: none;
+    box-sizing: border-box;
+    background-color: white;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.chat_right {                    /*右*/
+    width:37%;
+    height: 445px;
+    float:  left;
+    border: 0.5px solid #999999;
+    box-sizing: border-box;
+    background-color: white;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.choice{     /*图标栏*/
+    width: 100%;
+    height: 32px;
+    float: left;
+    border-top: 0.3px solid #999999;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+.trigger,.picture{
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-left: 0.4375rem;
+    padding-top: 0.3125rem;
+    cursor:pointer;
+}
+
+.send_message {            /*左下  输入发送框*/
+    width: 100%;
+    height: 162px;
+    float: left; 
+}
+
+.chackTextarea{
+    width: 100%;
+    height: 85px; 
+    padding:5px;
+    border: none;
+}
+
+.add,.sub,.pic{
+    display: none;
+}
+
+.mobileadd{
+    display: none;
+}
+
+.num{ 
+    font-size:1.125rem; font-style:italic; padding:0 4px 0 2px;
+}
+
+.send_message input[type="button"] {             /*左下  发送按钮*/
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 3.75rem;
+    height: 1.875rem;
+    background: url("img/blue.png")no-repeat;   
+    background-size: cover; 
+    overflow: hidden;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    float: right;
+    margin-right: 1.25rem;
+    margin-top: 0.0625rem;
+}
+
+.send_message input[type="button"]:hover {
+    background: url("img/dise.png")no-repeat;   
+    background-size: cover; 
+    overflow: hidden;   
+    color: black;
+}
+
+#tab{                  /*右边框*/
+    width:100%;
+    border:none;
+}
+
+#tab .active{
+    background-color: white;
+}
+
+#tab h3{
+    margin:0px;
+    margin-top:0.125rem;
+    font-size:1.125rem;
+    font-weight: bold;
+    background-color: #1E90FF;
+    width: 50%;
+    float:left;
+    height:35px;
+    line-height:24px;
+    text-align:center;
+    cursor:pointer;
+}
+
+#tab div{
+    clear:both;
+    height:385px;
+    padding:1.25rem 0 0 1.25rem;
+    display:none;
+    width: 95%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#biaozhun li:hover{
+    color: #999999;
+    cursor:pointer;
+}
+
+#tab a {            /*右下二级菜单模块*/
+    margin-top:0.19rem;
+    font-size:1.25rem;
+    font-weight: bold;
+    padding: 0.3125rem;
+    width: 93%;
+    float:left;
+    height:2.5rem;
+    text-align:center;
+    display: table-cell;
+    border-bottom: 0.5px solid #999999;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    background: url("img/blue.png")no-repeat;   
+    background-size: cover; 
+    overflow: hidden; 
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+#tab h1 {
+    padding: 0.3125rem; 
+    color: #666666;  
+    display: none;
+    width: 93%;
+    height: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-left: 0.5px solid #999999;
+    border-bottom: 0.5px solid #999999;
+    box-sizing: border-box;
+}
+
+#tab li{
+    list-style-type: none;
+}
+
+.chat_main {                /*左上  对话内容显示*/
+    float: left;
+    width: 100%;
+    height: 281px;
+    background: url("img/dise.png")no-repeat;   
+    background-size: cover;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.answerHead{
+	width: 100%;
+	height: auto;
+	margin-left: 0.9375rem;
+	float: right;
+}
+
+.nesHead{
+	width: 100%;
+	height: auto;
+	margin-left: 0.9375rem;
+	float: left;
+}
+
+.lefttxt,.righttxt{
+    min-height: 2.5rem;
+    max-width: 70%;
+    position: relative;
+    display: table;
+    border-radius: 0.4375rem;
+    margin: 0.625rem;
+}
+
+.pingjia{
+    position: relative;
+    float: left;
+    padding-left: 1rem;
+    min-width: 11rem;
+    height: auto;
+}
+
+.zhuanjie{
+    width: 14rem;
+    height: 3rem;
+}
+.leftimg {
+    width: auto;
+    height: 2.3rem;
+    float: left;
+    margin: 0.625rem;
+}
+
+.rightimg {
+    width: auto;
+    height: 2.3rem;
+    float: right;
+    margin: 0.625rem;
+    margin-left: 0;
+}
+
+.lefttxt{     /*左对话框*/
+    border:0.08rem solid #999999;
+    background-color: white;
+}
+
+.righttxt{      /*右对话框*/
+    float: right;
+    background-color: #0095cd;
+    color: white;
+}
+
+.lefttxt > p,.righttxt > p{    /*使内容居中*/
+    padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+}
+
+.lefttxt:before,.righttxt:after{   /*用伪类写出小三角形*/
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 0.5rem solid transparent;
+    position: absolute;
+    top: 0.6875rem;
+}
+/*分别给左右两边的小三角形定位*/
+.lefttxt:before{    
+    border-right: 0.5rem solid #999999;
+    left: -1rem;
+}
+
+.righttxt:after{    
+    border-left: 0.5rem solid #0095cd;
+    right: -0.875rem;
+}
+
+#emotions{
+	width: 40%;
+	font-size:12px;
+	background:#fff;
+	border-radius: 5px;
+	box-shadow: 0 0 8px gray;
+        margin-top: -100px;
+        position: absolute;
+	border: 1px solid #E8E8E8;
+        z-index: 1;
+}
+
+.mainimg{
+        height: 7rem;
+        width: auto;
+        border-radius: 0.3rem;
+}
+
+.z_addImg {
+        position: relative;
+        display: table;
+        float: right;
+        margin-right: 3.5rem;
+        margin-top: -3rem;
+}
+
+.tishi{
+    text-align: center;
+}
+
+#chartdiv{ margin: -.5em auto; text-align:center; width: 90%; height: 390px }
+
+
+#chart, #chartData {
+  border: 1px solid #333;
+  background: #ebedf2 url("images/gradient.png") repeat-x 0 0;
+}
+
+#chart {
+  display: block;
+  float: left;
+  cursor: pointer;
+}
+
+#chartData {
+  width: 200px;
+  margin: 0 40px 0 0;
+  float: right;
+  border-collapse: collapse;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  background-position: 0 -100px;
+}
+
+#chartData th, #chartData td {
+  padding: 0.5em;
+  border: 1px dotted #666;
+  text-align: left;
+}
+
+#chartData th {
+  border-bottom: 2px solid #333;
+  text-transform: uppercase;
+}
+
+#chartData td {
+  cursor: pointer;
+}
+
+#chartData td.highlight {
+  background: #e8e8e8;
+}
+
+#chartData tr:hover td {
+  background: #f0f0f0;
+}

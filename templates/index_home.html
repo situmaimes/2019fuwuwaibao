@@ -1,0 +1,330 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+		<meta name="format-detection" content="telephone=no, email=no, date=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv=X-UA-Compatible content="IE=edge"/>
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<link href="{%  static 'assets/css/bksystem.css'%}" rel="stylesheet" type="text/css" />
+		<link href="{%  static 'assets/font/iconfont.css'%}" rel="stylesheet" type="text/css" />
+		<link href="{%  static 'assets/css/module.css'%}" rel="stylesheet" type="text/css" />
+		<link href="{%  static 'assets/css/pages.css'%}" rel="stylesheet" type="text/css" />
+		<title>系统框架首页</title>
+{#                <script src="{%  static 'assets/js/question.js'%}" type="text/javascript"></script>#}
+		<script src="{%  static 'assets/js/jquery-1.9.1.min.js'%}" type="text/javascript"></script>
+		<script src="{%  static 'assets/js/jquery.cookie.js'%}" type="text/javascript"></script>
+		<script src="{%  static 'assets/js/jquery.nicescroll.js'%}" type="text/javascript"></script>
+		<script src="{%  static 'assets/js/HUpages.js'%}" type="text/javascript"></script>
+                <script src="{%  static 'assets/js/ajax.js'%}" type="text/javascript"></script>
+   
+	<!-- Bootstrap Styles-->
+    <link href="{%  static 'assets/css/bootstrap.css'%}" rel="stylesheet" />
+     <!-- FontAwesome Styles-->
+    <link href="{%  static 'assets/css/font-awesome.css'%}" rel="stylesheet" />
+     <!-- Morris Chart Styles-->
+    <link href="{%  static 'assets/js/morris/morris-0.4.3.min.css'%}" rel="stylesheet" />
+        <!-- Custom Styles-->
+    <link href="{%  static 'assets/css/custom-styles.css'%}" rel="stylesheet" />
+     <!-- Google Fonts-->
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+			<!--[if lt IE 9]>
+          <script src="{%  static 'assets/js/html5shiv.js'%}" type="text/javascript"></script>
+          <script src="{%  static 'assets/js/css3-mediaqueries.js'%}"  type="text/javascript"></script>
+        <![endif]-->
+	</head>
+        <body id="situation" class="background">
+		 <!-- /. ROW  -->
+            <div class="panel-body" style="height: 600px; overflow-y:scroll">
+            <div style="border: 1px  #000000; width: 100%; margin: 0 auto;">
+                 
+               
+			<div class="spacing_style"></div>
+			<div class="pages-style">
+				<div class="clearfix">
+					
+                <div class="box-module">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="box-module">
+                                <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-primary text-center no-boder bg-color-brown">
+                            <div class="panel-left pull-left brown">
+                                <i class="fa fa-users fa-5x"></i>
+                                
+                            </div>
+                            <div class="panel-right" id="people">
+							
+                             <strong> 在线人数</strong>
+
+                            </div>
+                        </div>
+                    </div>
+                                <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-primary text-center no-boder bg-color-red">
+                            <div class="panel-left pull-left red">
+                                <i class="fa fa fa-comments fa-5x"></i>
+                               
+                            </div>
+                            <div class="panel-right" id="reply">
+							 
+                               <strong> 累计问答</strong>
+
+                            </div>
+                        </div>
+                    </div>
+                                <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-primary text-center no-boder bg-color-blue">
+                              <div class="panel-left pull-left blue">
+                                <i class="fa fa-user fa-5x"></i>
+								</div>
+                                
+                            <div class="panel-right" id="day">
+							
+                               <strong> 服务天数</strong>
+
+                            </div>
+                        </div>
+                    </div>
+                            <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-primary text-center no-boder bg-color-green">
+                            <div class="panel-left pull-left green">
+                                <i class="fa fa-eye fa-5x"></i>
+                                
+                            </div>
+                            <div class="panel-right" id="visit">
+								
+                               <strong> 今日访问</strong>
+                            </div>
+                        </div>
+                    </div>
+                                                            
+                                </div>
+                    
+					<div class="col-md-12">
+						<div class="box-module" style=" margin-top:5px">
+							<div class="box-title">智能客服评价情况</div>
+							<div class="box-content">
+						        <div class="dd_echarts">
+                                <div id="main" class="mainwidth" style=" height:305px"></div>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+                        </div>
+                </div>
+                 </div>       
+                    
+				
+				<div class="box-module" style=" margin-top:20px">
+				<div class="col-md-4">
+						<div class="panel panel-default">
+						<div class="panel-heading" style=" margin-top:8px">
+                                                    <h6>高频提问</h6>                                                 
+						</div>
+						<div class="panel-body">
+                                                        <ul id="morris-area-chart">
+                                                        
+                                                        </ul>
+						</div>
+					</div>   
+					</div>
+                                    </div>
+                    						
+				</div> 
+					
+                <div class="box-module" style=" margin-top:20px">
+                    <div class="col-md-11 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                各类话题热度对比
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-bar-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                                    </div>
+
+                    
+                     <div class="box-module" style=" margin-top:20px;margin-right:1px"> 
+                     <div class="col-md-1 col-sm-12 col-xs-12"> 
+                         <div class="biaozhu">
+                             <div class="boxszrd">
+                                 <div style="width: 100%;height: 30px;"><div class="colorblue" ></div></div>
+                                 <div style="text-align: center;width: 100%; font-size: 16px;font-weight: bold;">上周热度</div>
+                             </div>
+                             <div class="boxbzrd">
+                                 <div style="width: 100%;height: 30px;"><div class="colorred" ></div></div>
+                                 <div style="text-align: center;width: 100%; font-size: 16px;font-weight: bold;">本周热度</div>
+                             </div>
+                         </div>
+                     </div>
+                
+                
+                </div>
+                </div>
+                </div>
+               
+            </div>  
+                <!-- /. ROW  -->    
+    <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <script src="{%  static 'assets/js/jquery-1.10.2.js'%}"></script>
+    <!-- Bootstrap Js -->
+    <script src="{%  static 'assets/js/bootstrap.min.js'%}"></script>
+	 
+    <!-- Metis Menu Js -->
+    <script src="{%  static 'assets/js/jquery.metisMenu.js'%}"></script>
+    <!-- Morris Chart Js -->
+    <script src="{%  static 'assets/js/morris/raphael-2.1.0.min.js'%}"></script>
+    <script src="{%  static 'assets/js/morris/morris.js'%}"></script>
+	
+	
+	<script src="{%  static 'assets/js/easypiechart.js'%}"></script>
+	<script src="{%  static 'assets/js/easypiechart-data.js'%}"></script>
+	
+	 <script src="{%  static 'assets/js/Lightweight-Chart/jquery.chart.js'%}"></script>
+	
+    <!-- Custom Js -->
+    <script src="{%  static 'assets/js/custom-scripts.js'%}"></script>
+ 
+<script src="{%  static 'assets/js/dist/echarts.js'%}" type="text/javascript"></script>
+<script>
+	//内页框架
+	$(function() {
+		$("#situation").Hupage({
+			scrollbar:function(e){
+				e.niceScroll({
+					      cursorcolor: "#dddddd",
+					      cursoropacitymax: 1,
+					      touchbehavior: false,
+					      cursorwidth: "3px",
+					      cursorborder: "0",
+					      cursorborderradius: "3px",
+				 });						
+			},
+			expand: function(thisBox, settings) {
+				settings.scrollbar(thisBox);//设置当前页滚动样式
+			}
+		})
+	})
+</script>
+<script>
+	/*********************/
+   require.config({
+            paths: {
+                echarts: './js/dist'
+            }
+        });
+        require(
+            [
+                'echarts',
+				'echarts/theme/macarons',
+                'echarts/chart/line',   // 按需加载所需图表，如需动态类型切换功能，别忘了同时加载相应图表
+                'echarts/chart/bar'
+            ],
+            function (ec,theme) {
+                var myChart = ec.init(document.getElementById('main'),theme);
+               option = {
+    title : {
+        text: '最近七天',
+        subtext: ''
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['好评数（个）','差评数（个）','好评率（%）']
+    },
+    toolbox: {
+        show : true,
+        feature : {
+            mark : {show: true},
+            dataView : {show: true, readOnly: false},
+            magicType : {show: true, type: ['line', 'bar']},
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    calculable : true,
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : ['周一','周二','周三','周四','周五','周六','周日']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value',
+            axisLabel : {
+                formatter: '{value}个'
+            }
+        }
+    ],
+    series : [
+        {
+            name:'好评数（个）',
+            type:'line',
+            data:[200, 250, 190, 180, 185, 190,200],
+            markPoint : {
+                data : [
+                    {type : 'max', name: '最大值'},
+                    {type : 'min', name: '最小值'}
+                ]
+            },
+            markLine : {
+                data : [
+                    {type : 'average', name: '平均值'}
+                ]
+            }
+        },
+        {
+            name:'差评数（个）',
+            type:'line',
+            data:[56, 40, 50, 54, 52, 49, 47],
+            markPoint : {
+                data : [
+                    {type : 'max', name: '最大值'},
+                    {type : 'min', name: '最小值'}
+                ]
+            },
+            markLine : {
+                data : [
+                    {type : 'average', name : '平均值'}
+                ]
+            }
+        },
+		   {
+            name:'好评率（%）',
+            type:'line',
+            data:[78, 86, 79, 77, 78, 80,81],
+            markPoint : {
+                data : [
+                    {type : 'max', name: '最大值'},
+                    {type : 'min', name: '最小值'}
+                ]
+            },
+            markLine : {
+                data : [
+                    {type : 'average', name : '平均值'}
+                ]
+            }
+        }
+    ]
+};
+                  
+			myChart.setOption(option);
+			}
+			);
+</script>
+</body>
+</html>
